@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementando JavaScript</title>
+</head>
+<body>
+    <!--Escribiendo en un elemento HTML, usando innerHTML-->
+    <h1>Mi primera página web</h1>
+    <p>Mi primer párrafo</p>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = 5 + 6;
+    </script>
+
+    <!--Escribiendo en la salida HTML usando document.write()-->
+    <h1>My First Web Page</h1>
+    <p>My first paragraph.</p>
+
+    <script>
+        document.write(5 + 6);
+    </script>
+
+    <!--Usando window.alert()-->
+    <h1>My First Web Page</h1>
+    <p>My first paragraph.</p>
+
+    <script>
+        window.alert(5 + 6);
+    </script>
+
+    <!--Se puede omitir la palabra clave window-->
+    <h1>My First Web Page</h1>
+    <p>My first paragraph.</p>
+
+    <script>
+        alert(5 + 6);
+    </script>
+
+    <!--Usando console.log()-->
+        <script>
+            console.log(5 + 6);
+        </script>
+
+    <!--Tipos de alertas-->
+    <script>
+        alert("Esto es una alerta");
+        
+        //confirm
+        var txt;
+        var r = confirm("Press a button!");
+        if (r == true) {
+        txt = "You pressed OK!";
+        } else {
+        txt = "You pressed Cancel!";
+        }
+    </script>
+
+    <!--Ejemplo utilizando bucle for-->
+    <p id="demo"></p>
+
+    <script>
+        const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+        let text = "";
+        for (let i = 0; i < cars.length; i++) {
+        text += cars[i] + "<br>";
+        }
+
+        document.getElementById("demo").innerHTML = text;
+    </script>
+    
+
+
+</body>
+</html>
